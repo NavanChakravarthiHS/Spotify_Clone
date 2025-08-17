@@ -1,13 +1,190 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="assets/logo.png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
     <title>Spotify - Web Player: Music for everyone</title>
 </head>
+
 <body>
-    
+    <div class="main">
+        <div class="sidebar">
+            <div class="nav">
+                <div class="nav-option">
+                    <i class="fa-solid fa-house"></i>
+                    <a href="#">Home</a>
+                </div>
+                <div class="nav-option">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <a href="#">Search</a>
+                </div>
+            </div>
+            <div class="library">
+                <div class="options">
+                    <div class="lib-options nav-option">
+                        <img src="./assets/library_icon.png" alt="">
+                        <a href="#">Your Library</a>
+                    </div>
+                    <div class="icons">
+                        <i class="fa-solid fa-plus"></i>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>
+                <div class="lib-box">
+                    <div class="box">
+                        <p class="box-p1" style="background-color: #232323;">Create your first playlist</p>
+                        <p class="box-p2" style="background-color: #232323;"> It's easy, we'll help you </p>
+                        <button class="badge">Create playlist</button>
+                    </div>
+                    <div class="box">
+                        <p class="box-p1" style="background-color: #232323;">Let's find some podcaste to follow</p>
+                        <p class="box-p2" style="background-color: #232323;"> We'll keep you updated on new episodes</p>
+
+                        <button class="badge">Create playlist</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="sticky-nav">
+                <nav class="arrows">
+                    <img src="./assets/backward_icon.png">
+                    <img src="./assets/forward_icon.png" class="hide">
+                </nav>
+                <nav class="buttons">
+                    <button class="badge hide">Explore Premium</button>
+                    <button class="badge dark-badge"><i class="fa-regular fa-circle-down"></i> Install app</button>
+                    <i class="fa-solid fa-user"></i>
+                </nav>
+
+            </div>
+            <!-- <div class="cards"> -->
+            <h2>Recently Played</h2>
+            <div class="cards-container">
+                <div class="card">
+                    <img src="https://i.scdn.co/image/ab67616d0000b2735944166f4d9bf4cec23f4626" class="card-image"
+                        class="card-image">
+                    <p class="card-title" style="background-color: #232323;">Yash - Hits</p>
+                    <p class="card-info" style="background-color: #232323;">Your daily updates of the most played
+                        track</p>
+                </div>
+            </div>
+            <!-- </div> -->
+            <h2>Trending now near you</h2>
+            <div class="cards-container">
+                <div class="card">
+                    <img src="assets/card2img.jpeg" class="card-image">
+                    <p class="card-title" style="background-color: #232323;">Mahiye Jinna Sohna</p>
+                    <p class="card-info" style="background-color: #232323;">Your daily updates of the most played
+                        track</p>
+                </div>
+                <div class="card">
+                    <img src="assets/card3img.jpeg" class="card-image">
+                    <p class="card-title" style="background-color: #232323;">Silent ocean</p>
+                    <p class="card-info" style="background-color: #232323;">Your daily updates of the most played
+                        track</p>
+                </div>
+                <div class="card">
+                    <img src="assets/card4img.jpeg" class="card-image">
+                    <p class="card-title" style="background-color: #232323;">ALTER ego NAA READY</p>
+                    <p class="card-info" style="background-color: #232323;">Your daily updates of the most played
+                        track</p>
+                </div>
+                <div class="card">
+                    <img src="https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/db/02/18/db02183e-6dde-6e4f-6781-bd86aa6721d0/195009046507.jpg/800x800cc.jpg"
+                        class="card-image">
+                    <p class="card-title" style="background-color: #232323;">Bangle bangari from Ekka</p>
+                    <p class="card-info" style="background-color: #232323;">Your daily updates of the most played
+                        track</p>
+                </div>
+                <div class="card">
+                    <img src="https://i.scdn.co/image/ab67616d0000b2732fc1f0e56f80b5e7cc388b3c" class="card-image">
+                    <p class="card-title" style="background-color: #232323;">Saiyaara Songs</p>
+                    <p class="card-info" style="background-color: #232323;">Your daily updates of the most played
+                        track</p>
+                </div>
+                <div class="card">
+                    <img src="https://i.scdn.co/image/ab67616d00001e02b7d815ebd111fbbe386fa361" class="card-image">
+                    <p class="card-title" style="background-color: #232323;">Masterpiece songs</p>
+                    <p class="card-info" style="background-color: #232323;">Your daily updates of the most played
+                        track</p>
+                </div>
+                <div class="card">
+                    <img src="https://i.scdn.co/image/ab67616d0000b2735944166f4d9bf4cec23f4626" class="card-image">
+                    <p class="card-title" style="background-color: #232323;">Yash - Hits</p>
+                    <p class="card-info" style="background-color: #232323;">Your daily updates of the most played
+                        track</p>
+                </div>
+
+                <div class="card">
+                    <img src="https://c.saavncdn.com/856/Kannada-Kanteerava-Dr-Rajkumar-Hits-Kannada-2025-20250311113001-500x500.jpg"
+                        class="card-image">
+                    <p class="card-title" style="background-color: #232323;">Dr. Rajkumar Hits</p>
+                    <p class="card-info" style="background-color: #232323;">Your daily updates of the most played
+                        track</p>
+                </div>
+
+
+                <div class="card">
+                    <img src="./assets/card1img.jpeg" class="card-image">
+                    <p class="card-title" style="background-color: #232323;">Top - 50 Global</p>
+                    <p class="card-info" style="background-color: #232323;">Your daily updates of the most played
+                        track</p>
+                </div>
+            </div>
+
+            <h2>Telugu super-hit songs</h2>
+            <div class="cards-container">
+                <div class="card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReXIL4y4zO30L0BNqo7TgNxAfBiAeq3Xv4OA&s"
+                        class="card-image">
+                    <p class="card-title" style="background-color: #232323;">Viral Vayyari song from Junior</p>
+                    <p class="card-info" style="background-color: #232323;">Your daily updates of the most played
+                        track</p>
+                </div>
+
+
+                <div class="card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTj8hyYuRv4Pb17s6jQP8c0PKNJiHB9p7zunQ&s"
+                        class="card-image">
+                    <p class="card-title" style="background-color: #232323;">Viral Vayyari song from Junior</p>
+                    <p class="card-info" style="background-color: #232323;">Your daily updates of the most played
+                        track</p>
+                </div>
+
+
+                <div class="card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGBULklRqXvcmX8uUeO4aant-Xs56P2kSU6g&s"
+                        class="card-image">
+                    <p class="card-title" style="background-color: #232323;">Tharagathi gadi - Color photo</p>
+                    <p class="card-info" style="background-color: #232323;">Your daily updates of the most played
+                        track</p>
+                </div>
+
+            </div>
+        
+        <div class="footer">
+            <div class="line">
+                
+            </div>
+        </div>
+
+
+        </div>
+        <div class="music-player"></div>
+    </div>
 </body>
+
 </html>
